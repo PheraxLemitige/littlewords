@@ -47,6 +47,6 @@ class _Routing extends ConsumerWidget {
   }
 
 /* La fonction au dessus est l'équivalent de
-  Widget _whenLoading() => LoadingRoute();
+  Widget _whenLoading() => const LoadingRoute();
   */
 }
