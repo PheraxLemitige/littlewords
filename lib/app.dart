@@ -13,10 +13,9 @@ class LittleWordsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const ProviderScope(
         child: MaterialApp(
-          title: 'Little Words',
-          home: _Routing(),
-        )
-    );
+      title: 'Little Words',
+      home: _Routing(),
+    ));
   }
 }
 
@@ -27,11 +26,13 @@ class _Routing extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-      return ref.watch(usernameProvider).when(data: _whenData, error: _whenError, loading: _whenLoading);
+    return ref
+        .watch(usernameProvider)
+        .when(data: _whenData, error: _whenError, loading: _whenLoading);
   }
 
   Widget _whenData(String? username) {
-    if (null == username){
+    if (null == username) {
       return const LoginRoute();
     }
     return const HomeRoute();
@@ -45,7 +46,7 @@ class _Routing extends ConsumerWidget {
     return const LoadingRoute();
   }
 
-  /* La fonction au dessus est l'équivalent de
+/* La fonction au dessus est l'équivalent de
   Widget _whenLoading() => LoadingRoute();
   */
 }
