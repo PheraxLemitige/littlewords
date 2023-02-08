@@ -39,6 +39,9 @@ dependencies:
   # Permet de stocker des données en local.
   shared_preferences: ^2.0.17
 
+  # Permet de gérer les providers
+  flutter_riverpod: ^2.1.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
