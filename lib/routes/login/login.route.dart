@@ -36,8 +36,6 @@ class LoginRoute extends StatelessWidget {
       ]),
     );
   }
-
-
 }
 
 class SaveUsernameButton extends ConsumerWidget {
