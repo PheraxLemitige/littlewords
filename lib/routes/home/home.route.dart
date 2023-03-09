@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:littlewords/widgets/word_card.dart';
 
 class HomeRoute extends StatefulWidget {
   const HomeRoute({Key? key}) : super(key: key);
@@ -65,6 +66,6 @@ class _Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Center(child: WordCard());
   }
 }
